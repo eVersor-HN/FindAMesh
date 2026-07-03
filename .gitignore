@@ -1,0 +1,11 @@
+# The APK is distributed as a GitHub Release asset, NOT committed to the repo tree.
+*.apk
+*.apks
+*.aab
+*.idsig
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
