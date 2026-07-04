@@ -19,7 +19,7 @@ Only this file, signed by the author, is genuine.
 | Field | Value |
 |---|---|
 | File | `FindAMesh-1.9.599-release.apk` |
-| **SHA-256 (APK file)** | `c102d387ca1beae535b3a7560dc114633d0cd066763cf0b708cd6f4d1999d7e5` |
+| **SHA-256 (APK file)** | `83fe18d1e995ba833755b8d3789aa33b3c99f0d46379f0a22915d32d31ddac31` |
 | **SHA-256 (signing certificate)** | `9A:A1:8D:62:93:C7:89:50:A3:D1:25:53:F5:0C:5F:CE:9A:68:69:60:EC:4C:4F:56:6E:9F:8C:1A:93:13:DF:8D` |
 | Signing subject | `CN=FindAMesh, O=eVersor-HN, C=DE` |
 
