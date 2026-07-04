@@ -15,7 +15,15 @@ install or use the app.**
 | File | `FindAMesh-1.9.599-release.apk` |
 | **SHA-256 (APK file)** | `83fe18d1e995ba833755b8d3789aa33b3c99f0d46379f0a22915d32d31ddac31` |
 | **SHA-256 (signing certificate)** | `9A:A1:8D:62:93:C7:89:50:A3:D1:25:53:F5:0C:5F:CE:9A:68:69:60:EC:4C:4F:56:6E:9F:8C:1A:93:13:DF:8D` |
-| Signing subject | `CN=FindAMesh, O=eVersor-HN, C=DE` |
+| Signing subject (reference only) | `CN=FindAMesh, OU=FindAMesh, O=eVersor-HN, L=, ST=, C=DE` |
+
+> The two **SHA-256 fingerprints above are the authoritative checks.** The signing subject is shown
+> only for reference — different tools print the DN with slightly different formatting, so compare it
+> loosely, not character-for-character.
+>
+> These values live in this repository. Anyone you give the APK to can fetch and verify them here
+> only once you make this repository **public**; while it is private, the repo and its Releases return
+> 404 to everyone except you.
 
 ## 1. APK file checksum
 
