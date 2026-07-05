@@ -41,10 +41,10 @@ your download against the published value proves the file is the **unmodified or
 not tampered with. (The same repository address and the app's signing fingerprint are shown
 inside the app under **Settings → System → "ÜBER & ECHTHEIT" (About & Authenticity)**.)
 
-**v1.9.599 — `FindAMesh-1.9.599-release.apk`:**
+**v1.9.600 — `FindAMesh-1.9.600-release.apk`:**
 
 ```
-83fe18d1e995ba833755b8d3789aa33b3c99f0d46379f0a22915d32d31ddac31
+707edeb8dcea1e14339712e503c394cd65f19b343af3c01f75490ba9ad0825a2
 ```
 
 The authoritative values for each release are in that release's notes and in
@@ -55,12 +55,12 @@ signing-certificate fingerprint).
 
 ```powershell
 # Windows (PowerShell)
-Get-FileHash .\FindAMesh-1.9.599-release.apk -Algorithm SHA256
+Get-FileHash .\FindAMesh-1.9.600-release.apk -Algorithm SHA256
 ```
 
 ```bash
 # macOS                                        # Linux
-shasum -a 256 FindAMesh-1.9.599-release.apk    sha256sum FindAMesh-1.9.599-release.apk
+shasum -a 256 FindAMesh-1.9.600-release.apk    sha256sum FindAMesh-1.9.600-release.apk
 ```
 
 The printed hash must match the value above (case-insensitive). If it does **not** match, do
