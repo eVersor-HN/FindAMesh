@@ -1,84 +1,125 @@
-<div align="center">
-
 # FAM — Find A Mesh
 
-**Offline-first, end-to-end-encrypted P2P / LAN + Bluetooth-mesh messenger for Android.**
-No central server. No account. No cloud. Your data stays on your devices.
+**FAM** is a fully offline Android **mesh messenger**. Devices find each other directly over
+Wi-Fi/LAN, a phone hotspot, or a Bluetooth-LE mesh and exchange **end-to-end-encrypted**
+messages, images, files and locations — chat, direct messages, radar/SOS, forum, market,
+polls and more, **with no central server, no account, and no cloud**. Built for festivals,
+remote areas, travel, emergencies, or simply private local communication.
 
-Copyright © 2026 **Marco Aurelio Fattizzo** — All rights reserved.
-**Proprietary / closed source.** See [LICENSE](LICENSE.md) and [DISCLAIMER](DISCLAIMER.md).
+> **Closed-source, proprietary application.** Free to use (including commercially) —
+> **not for sale, not redistributable, not modifiable, no reverse-engineering.**
+> See [LICENSE](LICENSE.md) and [DISCLAIMER](DISCLAIMER.md).
 
-**Official releases:** https://github.com/eVersor-HN/FindAMesh/releases
+> 💛 **FAM is free.** If it keeps you connected when nothing else does, you can support
+> development with a donation: **PayPal [paypal.me/FAMarco](https://paypal.me/FAMarco)**
+> (`@FAMarco`). Thank you!
 
-</div>
+Author / copyright: **© 2026 Marco Aurelio Fattizzo** ([@eVersor-HN](https://github.com/eVersor-HN)).
+This is the **official** distribution repository — get FAM only from here:
+**https://github.com/eVersor-HN/FindAMesh**
 
 ---
 
-> [!IMPORTANT]
-> This repository distributes the **official, ready-to-install app only** (this README, the
-> license, the disclaimer and the signed APK attached to each GitHub Release).
-> The source code is **not** public. Only builds published here, by the author, are genuine.
-> Always [verify what you downloaded](#verify-that-your-download-is-the-original) before installing.
+## Download & install
 
-## What it is
+1. Open the [**Releases**](https://github.com/eVersor-HN/FindAMesh/releases) page and download
+   the latest **`FindAMesh-<version>-release.apk`**.
+2. **Verify it is the genuine original** (see below) before installing it.
+3. On your phone, open the APK and allow installing from this source if prompted
+   ("Install unknown apps"). Follow the installer. FAM is sideloaded — it is **not** on
+   the Play Store.
 
-FAM (Find A Mesh) is a resilient communication app for situations where the normal internet is
-unavailable, unreliable, or undesirable — festivals, remote areas, travel, emergencies, or simply
-private local communication. Devices find each other directly over Wi-Fi/LAN, a phone hotspot, or a
-Bluetooth-LE mesh, and exchange **end-to-end-encrypted** messages, images, files and locations
-**without any central server**.
+There is nothing else to install — every device running FAM is a full node (server, client
+and mesh relay in one), and the app never needs the internet.
 
-Highlights:
+---
 
-- **No server, no account, no tracking.** Everything runs peer-to-peer on the local network / mesh.
-- **End-to-end encryption** for direct messages, images and files.
-- **Device pairing** with a visual comparison code (SAS) to defeat man-in-the-middle attacks.
-- **Offline by design** — the app blocks non-local network destinations.
-- **Extras:** local radar/pins, SOS & rally, group circles, diary, documents, deadlines, timers, a
-  built-in mini-game, and more.
+## ✅ Verify authenticity (SHA-256)
 
-## Requirements
+Every official release publishes the **SHA-256 checksum** of the APK. Comparing the checksum of
+your download against the published value proves the file is the **unmodified original** and was
+not tampered with. (The same repository address and the app's signing fingerprint are shown
+inside the app under **Settings → System → "ÜBER & ECHTHEIT" (About & Authenticity)**.)
+
+**v1.9.599 — `FindAMesh-1.9.599-release.apk`:**
+
+```
+83fe18d1e995ba833755b8d3789aa33b3c99f0d46379f0a22915d32d31ddac31
+```
+
+The authoritative values for each release are in that release's notes and in
+[`VERIFY.md`](VERIFY.md), which also documents the second, stronger check (the
+signing-certificate fingerprint).
+
+**Check it:**
+
+```powershell
+# Windows (PowerShell)
+Get-FileHash .\FindAMesh-1.9.599-release.apk -Algorithm SHA256
+```
+
+```bash
+# macOS                                        # Linux
+shasum -a 256 FindAMesh-1.9.599-release.apk    sha256sum FindAMesh-1.9.599-release.apk
+```
+
+The printed hash must match the value above (case-insensitive). If it does **not** match, do
+**not** install the file — it is not the genuine FAM build. The APK is signed with the
+author's release key; its certificate fingerprint (SHA-256)
+
+```
+9A:A1:8D:62:93:C7:89:50:A3:D1:25:53:F5:0C:5F:CE:9A:68:69:60:EC:4C:4F:56:6E:9F:8C:1A:93:13:DF:8D
+```
+
+can be checked with `apksigner verify --print-certs` or read in-app (Settings → System) —
+see [`VERIFY.md`](VERIFY.md). Android will refuse any later update that is not signed with
+the same key.
+
+---
+
+## Features
+
+- **Sector chat & E2E direct messages** — text, images and files; direct messages are
+  end-to-end encrypted (ECDH P-256, AES-256-GCM) and travel over LAN and the BLE mesh with
+  store-and-forward.
+- **Device pairing with SAS** — a short visual comparison code defeats man-in-the-middle
+  attacks; mesh content is author-signed and all keys are encrypted at rest.
+- **Radar, SOS & rally** — an offline radar with pins, distance and bearing from GPS +
+  compass. No map tiles, no internet.
+- **Forum, market & polls** — threads, offers and votes shared between devices across the
+  mesh, with a multilingual (16-language) profanity filter.
+- **AETHER light signals** — send and receive Morse via flashlight/LED and camera.
+- **Field tools** — survival & first-aid guide (multilingual), diary, documents, expiry
+  deadlines, alarm timer, neon-sign ticker and QR pairing/scanner.
+- **FLATLINE** — a built-in arcade roguelite with shared local highscores and its own
+  synthwave soundtrack.
+- **No account, no cloud, no ads, no tracking** — your data never leaves your devices; the
+  app talks only to the local network and mesh.
+
+## System requirements
 
 - **Android 8.0 (API 26)** or newer.
-- Installation from outside Google Play must be allowed on the device
-  ("Install unknown apps" for your browser / file manager).
+- ~55 MB free space for the APK. Mesh features ask for Bluetooth, Wi-Fi/network and — for
+  radar/SOS — location permissions on first use.
 
-## Install
+## License (summary)
 
-1. Open **[Releases](https://github.com/eVersor-HN/FindAMesh/releases)** and download the latest
-   `FindAMesh-<version>-release.apk`.
-2. **Verify it is the original** — see the next section. Do **not** skip this.
-3. Open the downloaded APK and confirm the installation.
+FAM is **proprietary, closed-source** software under the **FAM EULA**
+(full text in [`LICENSE.md`](LICENSE.md)):
 
-## Verify that your download is the original
+- ✅ **Use** it for any purpose, **including commercially** (companies may use it internally).
+- ✅ It is **free of charge**. To share it, point people to this repository.
+- ❌ **No redistributing or passing on copies**, **no selling**, **no modifying / adapting**,
+  **no reverse-engineering, decompiling or disassembling** — except where a bundled third-party
+  license or mandatory law (e.g. §§ 69d–69e UrhG / Directive 2009/24/EC) provides otherwise.
 
-Only builds published in this repository's Releases, signed by the author, are genuine. Two
-independent checks are provided; ideally do both. The authoritative values are published in the
-release notes of **each** release (and summarised in [VERIFY.md](VERIFY.md)).
+It bundles third-party components under their own licenses — AndroidX / Jetpack Compose,
+Kotlin & kotlinx.coroutines, CameraX, ZXing, Google Tink (all Apache-2.0), NanoHTTPD
+(BSD-3-Clause) and Google ML Kit Barcode Scanning (ML Kit Terms — scanning runs on-device,
+but ML Kit reports performance/diagnostic metrics to Google when the device is online).
+Full details and license texts: [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md).
 
-**1. APK file checksum (SHA-256).** Compute the hash of the file you downloaded and compare it to the
-value in the release notes.
-
-- Windows (PowerShell): `Get-FileHash .\FindAMesh-<version>-release.apk -Algorithm SHA256`
-- Linux/macOS: `sha256sum FindAMesh-<version>-release.apk`
-
-**2. Signing-certificate fingerprint (SHA-256).** This proves the APK was signed with the author's
-key even if the file was renamed or repackaged. It is also shown **inside the app** under
-**Settings → System → "ÜBER & ECHTHEIT" (About & Authenticity)**, so you can compare the installed
-app against the published fingerprint at any time.
-
-- With Android build-tools: `apksigner verify --print-certs FindAMesh-<version>-release.apk`
-- Or read it in-app (Settings → System) and compare.
-
-If either value does **not** match the one published here, the app has been altered — **do not use it.**
-
-## Author & contact
-
-Created and maintained by **Marco Aurelio Fattizzo**.
-Official distribution: https://github.com/eVersor-HN/FindAMesh
-
-## License
-
-**Proprietary. All rights reserved.** You may use the app privately and commercially, but you may
-**not** modify, reverse-engineer, sell, sublicense or redistribute it. Full terms:
-[LICENSE.md](LICENSE.md). Warranty and liability: [DISCLAIMER.md](DISCLAIMER.md).
+No warranty — FAM is an experimental communication tool, **not a certified emergency or
+safety system**. Never rely on it as your only channel where failure could cost life, health
+or property; mesh/LAN delivery can fail or be delayed without notice. See
+[`DISCLAIMER.md`](DISCLAIMER.md).

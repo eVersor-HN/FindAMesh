@@ -15,6 +15,14 @@ respective owners.
 | Google ML Kit — Barcode Scanning (`com.google.mlkit:barcode-scanning`) | QR/barcode scanning | Apache License 2.0 (client library); use also subject to Google's ML Kit terms |
 | Google Tink (via `androidx.security:security-crypto`) | Cryptographic primitives | Apache License 2.0 |
 
+### Note on Google ML Kit (Barcode Scanning)
+
+ML Kit is not open-source; its use is governed by the
+[ML Kit Terms](https://developers.google.com/ml-kit/terms) and the Google APIs Terms of
+Service. Barcode/QR scanning runs **on-device**, but the ML Kit library transmits
+performance and diagnostic metrics to Google when the device has connectivity. This notice
+serves as the user disclosure of Google's processing of ML Kit metrics data.
+
 ## License texts
 
 - **Apache License 2.0** — https://www.apache.org/licenses/LICENSE-2.0
