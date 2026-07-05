@@ -23,6 +23,12 @@ Service. Barcode/QR scanning runs **on-device**, but the ML Kit library transmit
 performance and diagnostic metrics to Google when the device has connectivity. This notice
 serves as the user disclosure of Google's processing of ML Kit metrics data.
 
+## Bundled media
+
+The music tracks and all other artwork, sounds, and text bundled with the app are original
+works created for FAM (in part AI-generated) and are owned by the author. They contain no
+third-party material and are covered by the FAM EULA, not by any third-party license.
+
 ## License texts
 
 - **Apache License 2.0** — https://www.apache.org/licenses/LICENSE-2.0
