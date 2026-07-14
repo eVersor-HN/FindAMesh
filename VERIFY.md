@@ -11,9 +11,9 @@ install or use the app.**
 
 | Field | Value |
 |---|---|
-| Version | `1.9.602` |
-| File | `FindAMesh-1.9.602-release.apk` |
-| **SHA-256 (APK file)** | `3953b419ba3ce606c9f2f8c02a055f8722d5d25f1a0811e91f75b3871397bc40` |
+| Version | `1.9.603` |
+| File | `FindAMesh-1.9.603-release.apk` |
+| **SHA-256 (APK file)** | `fed34c8a68c35c3bcc7a59ebcbde1cf38993bc1ec82e405b3969e9ce98c06e60` |
 | **SHA-256 (signing certificate)** | `9A:A1:8D:62:93:C7:89:50:A3:D1:25:53:F5:0C:5F:CE:9A:68:69:60:EC:4C:4F:56:6E:9F:8C:1A:93:13:DF:8D` |
 | Signing subject (reference only) | `CN=FindAMesh, OU=FindAMesh, O=eVersor-HN, L=, ST=, C=DE` |
 
@@ -29,17 +29,17 @@ Confirms the downloaded file is byte-for-byte identical to the published one.
 
 **Windows (PowerShell)**
 ```powershell
-Get-FileHash .\FindAMesh-1.9.602-release.apk -Algorithm SHA256
+Get-FileHash .\FindAMesh-1.9.603-release.apk -Algorithm SHA256
 ```
 
 **Linux**
 ```bash
-sha256sum FindAMesh-1.9.602-release.apk
+sha256sum FindAMesh-1.9.603-release.apk
 ```
 
 **macOS**
 ```bash
-shasum -a 256 FindAMesh-1.9.602-release.apk
+shasum -a 256 FindAMesh-1.9.603-release.apk
 ```
 
 Compare the output to **SHA-256 (APK file)** above.
@@ -52,7 +52,7 @@ strongest authenticity signal. It is **also shown inside the app**:
 
 **With Android build-tools (`apksigner`)**
 ```bash
-apksigner verify --print-certs FindAMesh-1.9.602-release.apk
+apksigner verify --print-certs FindAMesh-1.9.603-release.apk
 ```
 Look for the `SHA-256` certificate digest and compare it to **SHA-256 (signing certificate)** above
 (ignore the `:` separators / letter case when comparing).
