@@ -10,8 +10,9 @@ remote areas, travel, emergencies, or simply private local communication.
 > **free to share** — but **not for sale, not modifiable, no reverse-engineering.**
 > See [LICENSE](LICENSE.md) and [DISCLAIMER](DISCLAIMER.md).
 
-> 💸 **You extracted joy and gave nothing back. History's worst people started exactly this small.**
-> **PayPal:** [paypal.me/FAMarco](https://paypal.me/FAMarco) · **Bitcoin:** `bc1qv92c3eyeqvhgfnez7spfd7v2aytkhpshsl65yv`
+> 💸 **You extracted joy and gave nothing back. History's worst people started exactly this small.**  
+> **PayPal:** [paypal.me/FAMarco](https://paypal.me/FAMarco)  
+> **Bitcoin:** `bc1qv92c3eyeqvhgfnez7spfd7v2aytkhpshsl65yv`
 
 Author / copyright: **© 2026 Marco Aurelio Fattizzo** ([@eVersor-HN](https://github.com/eVersor-HN)).
 This is the **official** distribution repository — get FAM only from here:
