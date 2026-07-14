@@ -6,13 +6,12 @@ messages, images, files and locations — chat, direct messages, radar/SOS, foru
 polls and more, **with no central server, no account, and no cloud**. Built for festivals,
 remote areas, travel, emergencies, or simply private local communication.
 
-> **Closed-source, proprietary application.** Free to use (including commercially) —
-> **not for sale, not redistributable, not modifiable, no reverse-engineering.**
+> **Closed-source, proprietary application.** Free to use (including commercially) and
+> **free to share** — but **not for sale, not modifiable, no reverse-engineering.**
 > See [LICENSE](LICENSE.md) and [DISCLAIMER](DISCLAIMER.md).
 
-> 💛 **FAM is free.** If it keeps you connected when nothing else does, you can support
-> development with a donation: **PayPal [paypal.me/FAMarco](https://paypal.me/FAMarco)**
-> (`@FAMarco`). Thank you!
+> 💸 **You extracted joy and gave nothing back. History's worst people started exactly this small.**
+> **PayPal:** [paypal.me/FAMarco](https://paypal.me/FAMarco) · **Bitcoin:** `bc1qv92c3eyeqvhgfnez7spfd7v2aytkhpshsl65yv`
 
 Author / copyright: **© 2026 Marco Aurelio Fattizzo** ([@eVersor-HN](https://github.com/eVersor-HN)).
 This is the **official** distribution repository — get FAM only from here:
@@ -41,10 +40,10 @@ your download against the published value proves the file is the **unmodified or
 not tampered with. (The same repository address and the app's signing fingerprint are shown
 inside the app under **Settings → System → "ÜBER & ECHTHEIT" (About & Authenticity)**.)
 
-**v1.9.601 — `FindAMesh-1.9.601-release.apk`:**
+**v1.9.602 — `FindAMesh-1.9.602-release.apk`:**
 
 ```
-206043304046f72c3b864e1625bf39184189e7d16e01382a89313de8c8952436
+3953b419ba3ce606c9f2f8c02a055f8722d5d25f1a0811e91f75b3871397bc40
 ```
 
 The authoritative values for each release are in that release's notes and in
@@ -55,12 +54,12 @@ signing-certificate fingerprint).
 
 ```powershell
 # Windows (PowerShell)
-Get-FileHash .\FindAMesh-1.9.601-release.apk -Algorithm SHA256
+Get-FileHash .\FindAMesh-1.9.602-release.apk -Algorithm SHA256
 ```
 
 ```bash
 # macOS                                        # Linux
-shasum -a 256 FindAMesh-1.9.601-release.apk    sha256sum FindAMesh-1.9.601-release.apk
+shasum -a 256 FindAMesh-1.9.602-release.apk    sha256sum FindAMesh-1.9.602-release.apk
 ```
 
 The printed hash must match the value above (case-insensitive). If it does **not** match, do
@@ -91,15 +90,15 @@ the same key.
 - **AETHER light signals** — send and receive Morse via flashlight/LED and camera.
 - **Field tools** — survival & first-aid guide (multilingual), diary, documents, expiry
   deadlines, alarm timer, neon-sign ticker and QR pairing/scanner.
-- **FLATLINE** — a built-in arcade roguelite with shared local highscores and its own
-  synthwave soundtrack.
+- **Simple, fast navigation** — five clear sections, a global search that instantly finds any
+  feature, tool or setting, and an always-visible one-tap SOS. Nothing is more than a tap away.
 - **No account, no cloud, no ads, no tracking** — your data never leaves your devices; the
   app talks only to the local network and mesh.
 
 ## System requirements
 
 - **Android 8.0 (API 26)** or newer.
-- ~55 MB free space for the APK. Mesh features ask for Bluetooth, Wi-Fi/network and — for
+- ~50 MB free space for the APK. Mesh features ask for Bluetooth, Wi-Fi/network and — for
   radar/SOS — location permissions on first use.
 
 ## License (summary)
@@ -108,10 +107,11 @@ FAM is **proprietary, closed-source** software under the **FAM EULA**
 (full text in [`LICENSE.md`](LICENSE.md)):
 
 - ✅ **Use** it for any purpose, **including commercially** (companies may use it internally).
-- ✅ It is **free of charge**. To share it, point people to this repository.
-- ❌ **No redistributing or passing on copies**, **no selling**, **no modifying / adapting**,
-  **no reverse-engineering, decompiling or disassembling** — except where a bundled third-party
-  license or mandatory law (e.g. §§ 69d–69e UrhG / Directive 2009/24/EC) provides otherwise.
+- ✅ It is **free of charge** and **free to pass on** — you may share the **original, unmodified**
+  APK with anyone at no cost (ideally point them to this repository so they can verify it).
+- ❌ **No selling**, **no modifying / adapting / repackaging**, **no reverse-engineering,
+  decompiling or disassembling** — except where a bundled third-party license or mandatory law
+  (e.g. §§ 69d–69e UrhG / Directive 2009/24/EC) provides otherwise.
 
 It bundles third-party components under their own licenses — AndroidX / Jetpack Compose,
 Kotlin & kotlinx.coroutines, CameraX, ZXing, Google Tink (all Apache-2.0), NanoHTTPD

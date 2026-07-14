@@ -29,6 +29,11 @@ Use the Software:
 - **(b) Commercial use** — for the internal business purposes of a single organization, on devices
   owned or controlled by You or that organization.
 
+- **(c) Sharing** — You may make and pass on **exact, unmodified** copies of the Software to third
+  parties **free of charge**, provided it is not sold or bundled into a paid product or service, all
+  copyright, authenticity, and license notices remain intact, and each recipient is subject to this
+  Agreement.
+
 The Software is **licensed, not sold**. No rights are granted other than those expressly stated here.
 
 ## 3. Restrictions
@@ -41,8 +46,10 @@ law (see Section 4), You shall **not**, and shall not permit any third party to:
    source code, underlying ideas, algorithms, or structure of the Software;
 3. **Sell or commercialize the Software itself** — sell, resell, rent, lease, lend, or otherwise
    commercialize the Software or provide it to third parties as a product or a service;
-4. **Redistribute** — distribute, publish, sublicense, transfer, upload, host, or otherwise make the
-   Software available to any third party, whether modified or unmodified, free of charge or for a fee;
+4. **Redistribute modified or paid copies** — distribute, publish, sublicense, upload, host, or
+   otherwise provide any **modified, repackaged, or re-signed** version of the Software, or provide the
+   Software for a fee or as part of a paid product or service; sharing of the **exact, unmodified**
+   original free of charge under Section 2(c) is permitted;
 5. **Remove notices** — remove, alter, or obscure any copyright, trademark, authorship, or other
    proprietary notices, or the in-app authenticity/verification information;
 6. **Circumvent protections** — bypass, disable, or interfere with any technical protection, license,
